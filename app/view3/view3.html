@@ -1,0 +1,44 @@
+<h3>View 3</h3>
+<div>
+
+    <p>Company companiesss Info (Logged in users only must see this) <b style="color: darkblue">{{data.message}}</b></p>
+</div>
+
+
+
+<form>
+
+    <label>Soegetekst</label> <br/>
+    <input ng-model="search" type="text" id="search" name="search"> 
+
+    <br/><br/>
+
+    <label>Soegemulighed</label> <br/>
+    <select ng-model="optionList" ng-options="option as option.label for option in options" id="optionList" name="optionList" > 
+    </select> 
+
+    <br/><br/>
+
+    <label>Land</label> <br/>
+    <select ng-model="countryList" ng-options="country as country.label for country in countries" id="countryList" name="countryList"> 
+    </select> 
+
+    <br/><br/>
+
+    <button class="btn-primary" ng-click="find()">Submit</button>
+   
+    <br/><br/>
+
+    Name: <p>{{data.name}}</p>
+    Address: <p>{{data.address}}</p>
+    Vat Number: <p>{{data.vat}}</p>
+    ZipCode: <p>{{data.zipcode}}</p>
+    City: <p>{{data.city}}</p>
+    Phone: <p>{{data.phone}}</p>
+    Email: <p>{{data.email}}</p>
+
+
+
+
+
+</form>
